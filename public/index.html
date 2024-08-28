@@ -1,0 +1,636 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Edumy</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <style>
+    
+    </style>
+    
+<body class="bg-gray-100">
+
+<!-- Main Header Nav -->
+ 
+<header class="header-nav home2 style_one navbar-scrolltofixed main-menu">
+    <div class="container">
+        <!-- Ace Responsive Menu -->
+        <nav>
+            <!-- Menu Toggle btn-->
+            <div class="menu-toggle">
+                <button type="button" id="menu-btn">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+            </div>
+            <div class="logo-widget">
+                <img class="img-fluid" src="images/header-logo.png" alt="header-logo.png">
+                <span>EDUMY</span>
+            </div>
+            <!-- Responsive Menu Structure-->
+            <!-- Note: declare the Menu style in the data-menu-style="horizontal" (options: horizontal, vertical, accordion) -->
+            <ul id="respMenu" class="ace-responsive-menu" data-menu-style="horizontal">
+                <li><a href="#"><span class="title" style="margin-left: 40px;">Home</span></a>
+                    <!-- Level Two-->
+                    <ul>
+                        <li><a href="index.html">Home 1</a></li>
+                        <li><a href="index2.html">Home 2</a></li>
+                        <li><a href="index3.html">Home 3</a></li>
+                        <!-- Add other home links here -->
+                        <li><a href="#"><span class="title">Update New Homepages</span></a>
+                            <!-- Level Two-->
+                            <ul>
+                                <li><a href="index9.html">New Home 01</a></li>
+                                <li><a href="index10.html">New Home 02</a></li>
+                                <!-- Add other new home links here -->
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
+                <li><a href="#"><span class="title">Courses</span></a>
+                    <!-- Level Two-->
+                    <ul>
+                        <li><a href="#">Courses List</a>
+                            <!-- Level Three-->
+                            <ul>
+                                <li><a href="page-course-v1.html">Courses v1</a></li>
+                                <!-- Add other course list links here -->
+                            </ul>
+                        </li>
+                        <!-- Add other course items here -->
+                    </ul>
+                </li>
+                <li><a href="#"><span class="title">Events</span></a>
+                    <ul>
+                        <li><a href="page-event.html">Event List</a></li>
+                        <!-- Add other event items here -->
+                    </ul>
+                </li>
+                <li><a href="#"><span class="title">Pages</span></a>
+                    <ul>
+                        <li><a href="#"><span class="title">Shop Pages</span></a>
+                            <ul>
+                                <li><a href="page-shop.html">Shop</a></li>
+                                <!-- Add other shop links here -->
+                            </ul>
+                        </li>
+                        <!-- Add other page items here -->
+                    </ul>
+                </li>
+                <li><a href="#"><span class="title">Blog</span></a>
+                    <ul>
+                        <li><a href="page-blog-v1.html">Blog List 1</a></li>
+                        <!-- Add other blog links here -->
+                    </ul>
+                </li>
+                <li class="last"><a href="page-contact.html"><span class="title">Contact</span></a></li>
+                <!-- Sign Up Buttons -->
+                <li class="sign-up-btn">
+                    <a href="#" class="btn btn-md"><i class="flaticon-megaphone" style="margin-left: 260px;"></i> Become an Instructor</a>
+                </li>
+                <li class="sign-up-btn">
+                    <a href="#" class="btn btn-md" data-toggle="modal" data-target="#exampleModalCenter"><i class="flaticon-user"></i> Login/Register</a>
+                </li>
+            </ul>
+        </nav>
+        <!-- End of Responsive Menu -->
+    </div>
+</header>
+
+
+
+
+
+
+
+
+
+<!-- Hero Section -->
+<section id="hero-section" class="relative h-screen bg-cover bg-center" style="background-image: url('./images/bg.jpg'); opacity: 0.7; margin-top: -5px;">
+    <!-- Dark overlay for better text visibility -->
+    <div class="absolute inset-0 bg-black"></div>
+    
+    <div class="relative z-10 items-center justify-center h-full text-white text-center px-4" style="font-style: oblique; color: white;">
+        <h1 id="hero-heading" class="text-4xl px-100 md:text-5xl lg:text-6xl font-bold drop-shadow-lg" style="margin-left: 330px; padding-top: 150px; font-size: 50px">
+            START INVESTING IN YOU
+        </h1>
+        <p id="hero-paragraph" class="text-lg md:text-xl drop-shadow-md" style="margin-left: 250px; padding-top: 10px; font-size: 20px;">
+            Technology is bringing a massive wave of evolution on learning things in different ways
+        </p>
+        <button 
+            id="change-content-btn"
+            style="
+            background-color: transparent; 
+            border: 2px solid white; 
+            color: white; 
+            font-weight: 600; 
+            padding: 10px 20px; 
+            border-radius: 50px; 
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); 
+            margin-left: 500px; 
+            margin-top: 20px;
+            cursor: pointer; 
+            transition: all 0.3s ease-in-out;"
+            onmouseover="this.style.backgroundColor='white'; this.style.color='black';"
+            onmouseout="this.style.backgroundColor='transparent'; this.style.color='white';">
+            Ready to get Started?
+        </button>
+        
+        <!-- Previous Task Button -->
+        <button id="prev-task-btn" class="task-btn absolute left-4 top-1/2 transform -translate-y-1/2" style="margin-left: -650px;">
+            Previous
+        </button>
+        
+        <!-- Next Task Button -->
+        <button id="next-task-btn" class="task-btn absolute right-4 top-1/2 transform -translate-y-1/2" style="margin-left: 950px;">
+            Next
+        </button>
+    </div>
+</section>
+
+
+
+
+
+
+
+
+
+<!-- School Category Courses -->
+<section id="our-top-courses" class="our-courses">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-6 offset-lg-3">
+                <div class="main-title text-center">
+                    <h3 class="mt0" style="font-size: 2pc;">Browse Our Top Courses</h3>
+                    <p>Cum doctus civibus efficiantur in imperdiet deterruisset.</p>
+                </div>
+            </div>
+        </div>
+         <div class="grid grid-cols-1 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+             <div class="col-md-6 col-lg-4 col-xl-3">
+                <div class="top_courses">
+                    <div class="thumb">
+                        <img class="img-whp" src="images/t1.jpg" alt="t1.jpg">
+                        <div class="overlay">
+                            <div class="tag">Best Seller</div>
+                            <div class="icon"><span class="flaticon-like"></span></div>
+                            <a class="tc_preview_course"  href="#">Preview Course</a>
+                        </div>
+                    </div>
+                    <div class="details">
+                        <div class="tc_content">
+                            <p>Ali TUFAN</p>
+                            <h5>Introduction Web Design with HTML</h5>
+                            <ul class="tc_review">
+                                <li class="list-inline-item"><a href="#"><i class="fa fa-star"></i></a></li>
+                                <li class="list-inline-item"><a href="#"><i class="fa fa-star"></i></a></li>
+                                <li class="list-inline-item"><a href="#"><i class="fa fa-star"></i></a></li>
+                                <li class="list-inline-item"><a href="#"><i class="fa fa-star"></i></a></li>
+                                <li class="list-inline-item"><a href="#"><i class="fa fa-star"></i></a></li>
+                                <li class="list-inline-item"><a href="#">(6)</a></li>
+                            </ul>
+                        </div>
+                        <div class="tc_footer">
+                            <ul class="tc_meta float-left">
+                                <li class="list-inline-item"><a href="#"><i class="flaticon-profile"></i></a></li>
+                                <li class="list-inline-item"><a href="#">1548</a></li>
+                                <li class="list-inline-item"><a href="#"><i class="flaticon-comment"></i></a></li>
+                                <li class="list-inline-item"><a href="#">25</a></li>
+                            </ul>
+                            <div class="tc_price float-right">$69.95</div>
+                        </div>
+                    </div>
+                </div>
+             </div>
+             <div class="col-md-6 col-lg-4 col-xl-3">
+                <div class="top_courses">
+                    <div class="thumb">
+                        <img class="img-whp" src="images/t4.jpg" alt="t2.jpg">
+                        <div class="overlay">
+                            <div class="tag">Top Seller</div>
+                            <div class="icon"><span class="flaticon-like"></span></div>
+                            <a class="tc_preview_course" href="#">Preview Course</a>
+                        </div>
+                    </div>
+                    <div class="details">
+                        <div class="tc_content">
+                            <p>Ali TUFAN</p>
+                            <h5>Designing a Responsive Mobile Website with Muse</h5>
+                            <ul class="tc_review">
+                                <li class="list-inline-item"><a href="#"><i class="fa fa-star"></i></a></li>
+                                <li class="list-inline-item"><a href="#"><i class="fa fa-star"></i></a></li>
+                                <li class="list-inline-item"><a href="#"><i class="fa fa-star"></i></a></li>
+                                <li class="list-inline-item"><a href="#"><i class="fa fa-star"></i></a></li>
+                                <li class="list-inline-item"><a href="#"><i class="fa fa-star"></i></a></li>
+                                <li class="list-inline-item"><a href="#">(6)</a></li>
+                            </ul>
+                        </div>
+                        <div class="tc_footer">
+                            <ul class="tc_meta float-left">
+                                <li class="list-inline-item"><a href="#"><i class="flaticon-profile"></i></a></li>
+                                <li class="list-inline-item"><a href="#">1548</a></li>
+                                <li class="list-inline-item"><a href="#"><i class="flaticon-comment"></i></a></li>
+                                <li class="list-inline-item"><a href="#">25</a></li>
+                            </ul>
+                            <div class="tc_price float-right">$69.95</div>
+                        </div>
+                    </div>
+                </div>
+             </div>
+             <div class="col-md-6 col-lg-4 col-xl-3">
+                <div class="top_courses">
+                    <div class="thumb">
+                        <img class="img-whp" src="images/t3.jpg" alt="t3.jpg">
+                        <div class="overlay">
+                            <div class="tag">Top Seller</div>
+                            <div class="icon"><span class="flaticon-like"></span></div>
+                            <a class="tc_preview_course" href="#">Preview Course</a>
+                        </div>
+                    </div>
+                    <div class="details">
+                        <div class="tc_content">
+                            <p>Ali TUFAN</p>
+                            <h5>Adobe XD: Prototyping Tips and Tricks</h5>
+                            <ul class="tc_review">
+                                <li class="list-inline-item"><a href="#"><i class="fa fa-star"></i></a></li>
+                                <li class="list-inline-item"><a href="#"><i class="fa fa-star"></i></a></li>
+                                <li class="list-inline-item"><a href="#"><i class="fa fa-star"></i></a></li>
+                                <li class="list-inline-item"><a href="#"><i class="fa fa-star"></i></a></li>
+                                <li class="list-inline-item"><a href="#"><i class="fa fa-star"></i></a></li>
+                                <li class="list-inline-item"><a href="#">(6)</a></li>
+                            </ul>
+                        </div>
+                        <div class="tc_footer">
+                            <ul class="tc_meta float-left">
+                                <li class="list-inline-item"><a href="#"><i class="flaticon-profile"></i></a></li>
+                                <li class="list-inline-item"><a href="#">1548</a></li>
+                                <li class="list-inline-item"><a href="#"><i class="flaticon-comment"></i></a></li>
+                                <li class="list-inline-item"><a href="#">25</a></li>
+                            </ul>
+                            <div class="tc_price float-right">$69.95</div>
+                        </div>
+                    </div>
+                </div>
+             </div>
+             <div class="col-md-6 col-lg-4 col-xl-3">
+                <div class="top_courses">
+                    <div class="thumb">
+                        <img class="img-whp" src="images/t4.jpg" alt="t4.jpg">
+                        <div class="overlay">
+                            <div class="tag">Best Seller</div>
+                            <div class="icon"><span class="flaticon-like"></span></div>
+                            <a class="tc_preview_course" href="#">Preview Course</a>
+                        </div>
+                    </div>
+                    <div class="details">
+                        <div class="tc_content">
+                            <p>Ali TUFAN</p>
+                            <h5>Sketch: Creating Responsive SVG</h5>
+                            <ul class="tc_review">
+                                <li class="list-inline-item"><a href="#"><i class="fa fa-star"></i></a></li>
+                                <li class="list-inline-item"><a href="#"><i class="fa fa-star"></i></a></li>
+                                <li class="list-inline-item"><a href="#"><i class="fa fa-star"></i></a></li>
+                                <li class="list-inline-item"><a href="#"><i class="fa fa-star"></i></a></li>
+                                <li class="list-inline-item"><a href="#"><i class="fa fa-star"></i></a></li>
+                                <li class="list-inline-item"><a href="#">(6)</a></li>
+                            </ul>
+                        </div>
+                        <div class="tc_footer">
+                            <ul class="tc_meta float-left">
+                                <li class="list-inline-item"><a href="#"><i class="flaticon-profile"></i></a></li>
+                                <li class="list-inline-item"><a href="#">1548</a></li>
+                                <li class="list-inline-item"><a href="#"><i class="flaticon-comment"></i></a></li>
+                                <li class="list-inline-item"><a href="#">25</a></li>
+                            </ul>
+                            <div class="tc_price float-right">$69.95</div>
+                        </div>
+                    </div>
+                </div>
+             </div>
+             <div class="col-md-6 col-lg-4 col-xl-3">
+                <div class="top_courses">
+                    <div class="thumb">
+                        <img class="img-whp" src="images/t1.jpg" alt="t5.jpg">
+                        <div class="overlay">
+                            <div class="tag">Best Seller</div>
+                            <div class="icon"><span class="flaticon-like"></span></div>
+                            <a class="tc_preview_course" href="#">Preview Course</a>
+                        </div>
+                    </div>
+                    <div class="details">
+                        <div class="tc_content">
+                            <p>Ali TUFAN</p>
+                            <h5>Design Instruments for Communication</h5>
+                            <ul class="tc_review">
+                                <li class="list-inline-item"><a href="#"><i class="fa fa-star"></i></a></li>
+                                <li class="list-inline-item"><a href="#"><i class="fa fa-star"></i></a></li>
+                                <li class="list-inline-item"><a href="#"><i class="fa fa-star"></i></a></li>
+                                <li class="list-inline-item"><a href="#"><i class="fa fa-star"></i></a></li>
+                                <li class="list-inline-item"><a href="#"><i class="fa fa-star"></i></a></li>
+                                <li class="list-inline-item"><a href="#">(6)</a></li>
+                            </ul>
+                        </div>
+                        <div class="tc_footer">
+                            <ul class="tc_meta float-left">
+                                <li class="list-inline-item"><a href="#"><i class="flaticon-profile"></i></a></li>
+                                <li class="list-inline-item"><a href="#">1548</a></li>
+                                <li class="list-inline-item"><a href="#"><i class="flaticon-comment"></i></a></li>
+                                <li class="list-inline-item"><a href="#">25</a></li>
+                            </ul>
+                            <div class="tc_price float-right">$69.95</div>
+                        </div>
+                    </div>
+                </div>
+             </div>
+             <div class="col-md-6 col-lg-4 col-xl-3">
+                <div class="top_courses">
+                    <div class="thumb">
+                        <img class="img-whp" src="images/t4.jpg" alt="t6.jpg">
+                        <div class="overlay">
+                            <div class="tag">Top Seller</div>
+                            <div class="icon"><span class="flaticon-like"></span></div>
+                            <a class="tc_preview_course" href="#">Preview Course</a>
+                        </div>
+                    </div>
+                    <div class="details">
+                        <div class="tc_content">
+                            <p>Ali TUFAN</p>
+                            <h5>How to be a DJ? Make Electronic Music</h5>
+                            <ul class="tc_review">
+                                <li class="list-inline-item"><a href="#"><i class="fa fa-star"></i></a></li>
+                                <li class="list-inline-item"><a href="#"><i class="fa fa-star"></i></a></li>
+                                <li class="list-inline-item"><a href="#"><i class="fa fa-star"></i></a></li>
+                                <li class="list-inline-item"><a href="#"><i class="fa fa-star"></i></a></li>
+                                <li class="list-inline-item"><a href="#"><i class="fa fa-star"></i></a></li>
+                                <li class="list-inline-item"><a href="#">(6)</a></li>
+                            </ul>
+                        </div>
+                        <div class="tc_footer">
+                            <ul class="tc_meta float-left">
+                                <li class="list-inline-item"><a href="#"><i class="flaticon-profile"></i></a></li>
+                                <li class="list-inline-item"><a href="#">1548</a></li>
+                                <li class="list-inline-item"><a href="#"><i class="flaticon-comment"></i></a></li>
+                                <li class="list-inline-item"><a href="#">25</a></li>
+                            </ul>
+                            <div class="tc_price float-right">$69.95</div>
+                        </div>
+                    </div>
+                </div>
+             </div>
+             <div class="col-md-6 col-lg-4 col-xl-3">
+                <div class="top_courses">
+                    <div class="thumb">
+                        <img class="img-whp" src="images/t3.jpg" alt="t7.jpg">
+                        <div class="overlay">
+                            <div class="tag">Top Seller</div>
+                            <div class="icon"><span class="flaticon-like"></span></div>
+                            <a class="tc_preview_course" href="#">Preview Course</a>
+                        </div>
+                    </div>
+                    <div class="details">
+                        <div class="tc_content">
+                            <p>Ali TUFAN</p>
+                            <h5>How to Make Beautiful Landscape Photos?</h5>
+                            <ul class="tc_review">
+                                <li class="list-inline-item"><a href="#"><i class="fa fa-star"></i></a></li>
+                                <li class="list-inline-item"><a href="#"><i class="fa fa-star"></i></a></li>
+                                <li class="list-inline-item"><a href="#"><i class="fa fa-star"></i></a></li>
+                                <li class="list-inline-item"><a href="#"><i class="fa fa-star"></i></a></li>
+                                <li class="list-inline-item"><a href="#"><i class="fa fa-star"></i></a></li>
+                                <li class="list-inline-item"><a href="#">(6)</a></li>
+                            </ul>
+                        </div>
+                        <div class="tc_footer">
+                            <ul class="tc_meta float-left">
+                                <li class="list-inline-item"><a href="#"><i class="flaticon-profile"></i></a></li>
+                                <li class="list-inline-item"><a href="#">1548</a></li>
+                                <li class="list-inline-item"><a href="#"><i class="flaticon-comment"></i></a></li>
+                                <li class="list-inline-item"><a href="#">25</a></li>
+                            </ul>
+                            <div class="tc_price float-right">$69.95</div>
+                        </div>
+                    </div>
+                </div>
+             </div>
+             <div class="col-md-6 col-lg-4 col-xl-3">
+                <div class="top_courses">
+                    <div class="thumb">
+                        <img class="img-whp" src="images/t4.jpg" alt="t8.jpg">
+                        <div class="overlay">
+                            <div class="tag">Best Seller</div>
+                            <div class="icon"><span class="flaticon-like"></span></div>
+                            <a class="tc_preview_course" href="#">Preview Course</a>
+                        </div>
+                    </div>
+                    <div class="details">
+                        <div class="tc_content">
+                            <p>Ali TUFAN</p>
+                            <h5>Fashion Photography From Professional</h5>
+                            <ul class="tc_review">
+                                <li class="list-inline-item"><a href="#"><i class="fa fa-star"></i></a></li>
+                                <li class="list-inline-item"><a href="#"><i class="fa fa-star"></i></a></li>
+                                <li class="list-inline-item"><a href="#"><i class="fa fa-star"></i></a></li>
+                                <li class="list-inline-item"><a href="#"><i class="fa fa-star"></i></a></li>
+                                <li class="list-inline-item"><a href="#"><i class="fa fa-star"></i></a></li>
+                                <li class="list-inline-item"><a href="#">(6)</a></li>
+                            </ul>
+                        </div>
+                        <div class="tc_footer">
+                            <ul class="tc_meta float-left">
+                                <li class="list-inline-item"><a href="#"><i class="flaticon-profile"></i></a></li>
+                                <li class="list-inline-item"><a href="#">1548</a></li>
+                                <li class="list-inline-item"><a href="#"><i class="flaticon-comment"></i></a></li>
+                                <li class="list-inline-item"><a href="#">25</a></li>
+                            </ul>
+                            <div class="tc_price float-right">$69.95</div>
+                        </div>
+                    </div>
+                </div>
+             </div>
+            <div class="col-lg-6 offset-lg-3">
+                <div class="courses_all_btn text-center">
+                    <a class="btn btn-transparent" href="#">View All Courses</a>
+                </div>
+            </div>
+         </div>
+    </div>
+</section>
+
+
+
+
+
+	<!-- Our Footer -->
+	<section class="footer_one">
+		<div class="container">
+			<div class="row">
+				<div class="col-sm-6 col-md-4 col-md-3 col-lg-3">
+					<div class="footer_contact_widget">
+						<h4>CONTACT</h4>
+						<p>329 Queensberry Street, North Melbourne </p>
+						<p>VIC 3051, Australia.</p>
+						<p>123 456 7890</p>
+						<p>support@edumy.com</p>
+					</div>
+				</div>
+				<div class="col-sm-6 col-md-4 col-md-3 col-lg-2">
+					<div class="footer_company_widget">
+						<h4>COMPANY</h4>
+						<ul class="list-unstyled">
+							<li><a href="#">About Us</a></li>
+							<li><a href="#">Blog</a></li>
+							<li><a href="page-contact.html">Contact</a></li>
+							<li><a href="#">Become a Teacher</a></li>
+						</ul>
+					</div>
+				</div>
+				<div class="col-sm-6 col-md-4 col-md-3 col-lg-2">
+					<div class="footer_program_widget">
+						<h4>PROGRAMS</h4>
+						<ul class="list-unstyled">
+							<li><a href="#">Nanodegree Plus</a></li>
+							<li><a href="#">Veterans</a></li>
+							<li><a href="#">Georgia</a></li>
+							<li><a href="#">Self-Driving Car</a></li>
+						</ul>
+					</div>
+				</div>
+				<div class="col-sm-6 col-md-4 col-md-3 col-lg-2">
+					<div class="footer_support_widget">
+						<h4>SUPPORT</h4>
+						<ul class="list-unstyled">
+							<li><a href="#">Documentation</a></li>
+							<li><a href="#">Forums</a></li>
+							<li><a href="#">Language Packs</a></li>
+							<li><a href="#">Release Status</a></li>
+						</ul>
+					</div>
+				</div>
+				<div class="col-sm-6 col-md-6 col-md-3 col-lg-3">
+					<div class="footer_apps_widget">
+						<h4>MOBILE</h4>
+						<div class="app_grid">
+							<button class="apple_btn btn-dark">
+								<span class="icon">
+									<span class="flaticon-apple"></span>
+								</span>
+								<span class="title">App Store</span>
+								<span class="subtitle">Available now on the</span>
+							</button>
+							<button class="play_store_btn btn-dark">
+								<span class="icon">
+									<span class="flaticon-google-play"></span>
+								</span>
+								<span class="title">Google Play</span>
+								<span class="subtitle">Get in on</span>
+							</button>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<!-- Our Footer Middle Area -->
+	<section class="footer_middle_area p0">
+		<div class="container">
+			<div class="row">
+				<div class="col-sm-4 col-md-3 col-lg-3 col-xl-2 pb15 pt15">
+					<div class="logo-widget home2">
+						<img class="img-fluid" src="images/header-logo.png" alt="header-logo.png" style="margin-left: 130px;">
+						<span style="margin-left: 130px;">EDUMY</span>
+					</div>
+				</div>
+				<div class="col-sm-8 col-md-5 col-lg-6 col-xl-6 pb25 pt25 brdr_left_right">
+					<div class="footer_menu_widget" style="margin-left: -280px;">
+						<ul>
+							<li class="list-inline-item"><a href="#">Home</a></li>
+							<li class="list-inline-item"><a href="#">Privacy</a></li>
+							<li class="list-inline-item"><a href="#">Terms</a></li>
+							<li class="list-inline-item"><a href="#">Sitemap</a></li>
+							<li class="list-inline-item"><a href="#">Purchase</a></li>
+						</ul>
+					</div>
+				</div>
+				<div class="col-sm-12 col-md-4 col-lg-3 col-xl-4 pb15 pt15">
+					<div class="footer_social_widget mt15">
+						<ul>
+							<li class="list-inline-item"><a href="#"><i class="fa fa-facebook"></i></a></li>
+							<li class="list-inline-item"><a href="#"><i class="fa fa-twitter"></i></a></li>
+							<li class="list-inline-item"><a href="#"><i class="fa fa-instagram"></i></a></li>
+							<li class="list-inline-item"><a href="#"><i class="fa fa-pinterest"></i></a></li>
+							<li class="list-inline-item"><a href="#"><i class="fa fa-dribbble"></i></a></li>
+							<li class="list-inline-item"><a href="#"><i class="fa fa-google"></i></a></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<!-- Our Footer Bottom Area -->
+	<section class="footer_bottom_area pt25 pb25">
+		<div class="container">
+			<div class="row" style="margin-left: 150px;">
+				<div class="col-lg-6 offset-lg-3">
+					<div class="copyright-widget text-center">
+						<p>Copyright Edumy © 2019. All Rights Reserved.</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+<script>
+    // Define arrays for background images and text
+    const images = [
+        './images/bg.jpg',
+        './images/bg2.jpg',
+        './images/bg3.jpg'
+    ];
+    const headings = [
+        'START INVESTING IN YOU',
+        'EMBRACE THE FUTURE',
+        'START INVESTING IN YOU'
+        
+    ];
+    const paragraphs = [
+        'Technology is bringing a massive wave of evolution on learning things in different ways',
+        'Technology is bringing a massive wave of evolution on learning things in different ways',
+        'Technology is bringing a massive wave of evolution on learning things in different ways'
+    ];
+    
+    let currentIndex = 0;
+
+    function updateContent(index) {
+        document.getElementById('hero-section').style.backgroundImage = `url(${images[index]})`;
+        document.getElementById('hero-heading').innerText = headings[index];
+        document.getElementById('hero-paragraph').innerText = paragraphs[index];
+    }
+
+    document.getElementById('next-task-btn').addEventListener('click', function() {
+        currentIndex = (currentIndex + 1) % images.length;
+        updateContent(currentIndex);
+    });
+
+    document.getElementById('prev-task-btn').addEventListener('click', function() {
+        currentIndex = (currentIndex - 1 + images.length) % images.length;
+        updateContent(currentIndex);
+    });
+
+    // Initial content setup
+    updateContent(currentIndex);
+</script>
+
+
+
+
+
+
+
+    </body>
+</html>
